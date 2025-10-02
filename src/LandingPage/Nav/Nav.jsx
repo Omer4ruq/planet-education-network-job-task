@@ -6,13 +6,16 @@ const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="w-full pt-[56px]">
-      <div className="flex justify-between items-center pr-20 pl-[84px]">
+    <nav className="max-w-[1920px] mx-auto md:pt-[56px] pt-5 ">
+      <div className="flex justify-between items-center md:pr-20 md:pl-[84px] px-5">
         <div>
-          <img className="w-[184px] h-[69px] object-cover" src={logo} alt="" />
+          <img className="md:w-[184px] w-[100px] md:h-[69px] object-cover" src={logo} alt="" />
         </div>
         <div>
-          <GiHamburgerMenu className="text-white text-2xl" />
+          <button>
+      <GiHamburgerMenu className="text-white md:text-2xl text-xl" />
+          </button>
+    
         </div>
       </div>
     </nav>

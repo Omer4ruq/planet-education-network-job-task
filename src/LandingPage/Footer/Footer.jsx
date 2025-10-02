@@ -5,29 +5,29 @@ import linkedin from "../../../public/linkedin.png";
 
 const Footer = () => {
   return (
-    <footer className="pb-[90px]">
-      <div className="flex justify-between items-center pr-20 pl-[84px]">
-        <div>
-          <img className="w-[184px] h-[69px] object-cover" src={logo} alt="" />
-          <p className="text-white mt-4">
+    <footer className="md:pb-[90px] pb-10">
+      <div className="xl:flex justify-between items-center md:pr-20 md:pl-[84px] px-5">
+        <div className="xl:mb-0 mb-5">
+          <img className="md:w-[184px] w-[100px] md:h-[69px] object-cover" src={logo} alt="" />
+          <p className="text-white mt-4 md:text-base text-xs">
             © 2025 Victoria College of Arts and Design, All rights reserved.
           </p>
         </div>
-        <div className="text-[#8EC8EE] border border-[#8EC8EE] px-[37px] py-[14.5px] flex">
-          <a href="/" className="mr-[42px]">
+        <div className="text-[#8EC8EE] md:border md:border-[#8EC8EE] md:px-[37px] md:py-[14.5px] flex md:flex-row flex-col md:gap-0 gap-5">
+          <a href="/" className="mr-[42px] md:text-base text-xs">
             Policies
           </a>
-          <a href="/" className="mr-[32px]">
+          <a href="/" className="mr-[32px] md:text-base text-xs">
             Contact us
           </a>
-          <a href="/" className="mr-[30px]">
+          <a href="/" className="mr-[30px] md:text-base text-xs">
             Meet the Team
           </a>
           <div className="flex items-center gap-[10px]">
             <a href="/">
               {" "}
               <img
-                className="w-[24px] h-[24px] object-cover"
+                className="md:w-[24px] md:h-[24px] w-5 object-cover"
                 src={facebook}
                 alt=""
               />
@@ -35,7 +35,7 @@ const Footer = () => {
             <a href="/">
               {" "}
               <img
-                className="w-[24px] h-[24px] object-cover"
+                className="md:w-[24px] md:h-[24px] w-5 object-cover"
                 src={instagram}
                 alt=""
               />
@@ -43,7 +43,7 @@ const Footer = () => {
             <a href="/">
               {" "}
               <img
-                className="w-[24px] h-[24px] object-cover"
+                className="md:w-[24px] md:h-[24px] w-5 object-cover"
                 src={linkedin}
                 alt=""
               />

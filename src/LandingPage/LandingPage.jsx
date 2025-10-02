@@ -5,6 +5,9 @@ import Footer from "./Footer/Footer";
 import SecNav from "./SecNav/SecNav";
 import Courses from "./Courses/Courses";
 import Stories from "./Stories/Stories";
+import Partner from "./Partner/Partner";
+import StudentTestimonial from "./StudentTestimonial/StudentTestimonial";
+import CampusLocations from "./CampusLocations/CampusLocations";
 
 const LandingPage = () => {
   return (
@@ -17,6 +20,9 @@ const LandingPage = () => {
           <SecNav></SecNav>
         </div>
         <Courses></Courses>
+        <CampusLocations></CampusLocations>
+        <Partner></Partner>
+        <StudentTestimonial></StudentTestimonial>
         <Stories></Stories>
       </div>
       <Footer></Footer>
