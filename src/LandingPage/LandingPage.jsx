@@ -4,6 +4,7 @@ import Scroll from "../Components/Scroll";
 import Footer from "./Footer/Footer";
 import SecNav from "./SecNav/SecNav";
 import Courses from "./Courses/Courses";
+import Stories from "./Stories/Stories";
 
 const LandingPage = () => {
   return (
@@ -16,6 +17,7 @@ const LandingPage = () => {
           <SecNav></SecNav>
         </div>
         <Courses></Courses>
+        <Stories></Stories>
       </div>
       <Footer></Footer>
     </div>
