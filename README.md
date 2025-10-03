@@ -19,6 +19,6 @@ The application is **responsive**, **mobile-friendly**, and includes a **dynamic
 - **Frontend:** React.js  
 - **Styling:** Tailwind CSS  
 - **Data:** Faker API  
-- **Deployment:** [Vercel / Netlify / GitHub Pages]  
+- **Deployment:** [Live Demo](https://planet-education-network-job-task.netlify.app/)  
 
 ---
