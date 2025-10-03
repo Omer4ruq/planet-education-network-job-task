@@ -12,7 +12,7 @@ const Stories = () => {
             </div>
             <div className='grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 lg:gap-12 xl:gap-[150px] mt-4 md:mt-[43px]'>
 <div>
-    <img src={stories1} alt="" className="w-full h-auto" />
+    <img src={stories1} alt="" className="mx-w-[677px] mx-h-[709px]" />
 </div>
 <div className='mt-2 '>
     <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[64px] text-white font-black uppercase ">Induction in VCAD Canary Wharf campus</h1>
@@ -35,7 +35,7 @@ const Stories = () => {
             </div>
             <div className='grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 lg:gap-12 xl:gap-[150px] mt-4 md:mt-[43px]'>
                 <div>
-                    <img src={stories2} alt="" className="w-full h-auto" />
+                    <img src={stories2} alt="" className="mx-w-[677px] mx-h-[709px]" />
                 </div>
                 <div className='mt-2 '>
                    <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[64px] text-white font-black uppercase">Be ready for 

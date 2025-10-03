@@ -39,7 +39,7 @@ const CampusLocations = () => {
   ];
 
   return (
-    <div id='campuses' className="min-h-screen text-white relative overflow-hidden mt-32 md:mt-[300px]">
+    <div id='campuses' className="min-h-screen  text-white relative overflow-hidden mt-4 md:mt-[200px] ">
       <div className='bg-gradient-to-br from-blue-950 via-blue-900 to-blue-950 relative min-h-[900px] md:h-[717px] mt-16 md:mt-32 py-12'>
         {/* Animated background labels */}
         {labels.map((label, idx) => (
@@ -68,7 +68,7 @@ const CampusLocations = () => {
                 <img
                   src={campus.image}
                   alt={campus.name}
-                  className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                  className="absolute inset-0 w-full h-full object-cover "
                 />
                 
                 {/* Gradient overlay */}
@@ -101,7 +101,7 @@ const CampusLocations = () => {
               <span className="h-4 sm:h-5 md:h-[22px] w-[150px] sm:w-[200px] md:w-[270px] lg:w-[365px] bg-[#8EC8EE] block absolute bottom-1 md:bottom-2 left-0"></span>
             </div>
             
-            <p className="text-white text-base md:text-lg lg:text-xl xl:text-2xl leading-relaxed">
+            <p className="text-white text-start text-base md:text-lg lg:text-xl xl:text-2xl ">
               We have multiple locations across the UK, all strategically situated
               in vibrant city centers and easily accessible by public transport.
             </p>

@@ -4,23 +4,29 @@ import Marquee from "react-fast-marquee";
 import { faker } from "@faker-js/faker";
 
 
-import student from "../../../public/student.png";
+// import student1 from "../../../public/student1.png";
+import student2 from "../../../public/student2.png";
+import student3 from "../../../public/student3.png";
+
+const images = [ student2, student3];
+
 
 const StudentTestimonial = () => {
   const [testimonials, setTestimonials] = useState([]);
 
-  useEffect(() => {
-    const fakeTestimonials = Array.from({ length: 6 }).map((_, idx) => ({
-      id: idx + 1,
-      quote: `“ ${faker.lorem.sentence(5)} “`,
-      meta: `${faker.person.firstName()} \\ ${faker.number.int({ min: 18, max: 28 })} \\ ${faker.word.words(2)}`,
-      img: student, // Using the local image for all testimonials
-    }));
-    setTestimonials(fakeTestimonials);
-  }, []);
+useEffect(() => {
+  const fakeTestimonials = Array.from({ length: 6 }).map((_, idx) => ({
+    id: idx + 1,
+    quote: `“ ${faker.lorem.sentence(5)} “`,
+    meta: `${faker.person.firstName()} \\ ${faker.number.int({ min: 18, max: 28 })} \\ ${faker.word.words(2)}`,
+    img: images[idx % images.length], // ছবিগুলো ঘুরিয়ে ব্যবহার করবে
+  }));
+  setTestimonials(fakeTestimonials);
+}, []);
+
 
   return (
-    <div id='testimonials' className="w-full mt-[500px]">
+    <div id='testimonials' className="w-full mt-[200px]">
       <div className=" w-fit relative mb-20 md:mb-[200px]  max-w-[560px] md:px-[100px] px-5">
         <h1 className="text-white md:text-[64px] sm:text-5xl text-4xl font-black relative z-10 uppercase">
           Student Testimonials
@@ -30,15 +36,15 @@ const StudentTestimonial = () => {
 
       <Marquee speed={40} gradient={false}>
         {testimonials.map((item, idx) => (
-          <div key={idx} className="relative w-fit mr-10">
-            <img className=" object-cover" src={item.img} alt="" />
+          <div key={idx} className="relative w-fit mr-10 ">
+            <img className="  object-cover" src={item.img} alt="" />
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
               <h1 className="text-white text-3xl sm:text-5xl font-black max-w-[378px]">
                 {item.quote}
               </h1>
               <p className="text-white text-xl my-5">{item.meta}</p>
 
-              {/* social icons আগের মতোই */}
+        
               <div className="flex gap-[10px]">
                 {/* facebook */}
                 <svg viewBox="0 0 24 24" width="24" height="24" fill="none">
