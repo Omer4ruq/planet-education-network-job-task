@@ -6,7 +6,7 @@ const Partner = () => {
   return (
     <div
       id="institutions"
-      className="flex flex-col lg:flex-row justify-between px-4 sm:px-8 md:px-16 lg:px-[100px] mt-10 md:mt-20 lg:mt-[200px] gap-10 md:gap-16"
+      className="flex flex-col xl:flex-row justify-between px-4 sm:px-8 md:px-16 lg:px-[100px] mt-10 md:mt-20 lg:mt-[200px] gap-10 md:gap-16"
     >
       {/* Text Section */}
       <div className="flex-1">
@@ -29,7 +29,7 @@ const Partner = () => {
       </div>
 
       {/* Images Section */}
-      <div className="flex-1 grid grid-cols-2 sm:grid-cols-2 md:grid-cols-1 gap-4 md:gap-8 items-start justify-start">
+      <div className="flex-1 grid grid-cols-2 sm:grid-cols-2 md:grid-cols-1 gap-4 md:gap-8 items-start justify-start w-[50%]">
         <img
           src={partner1}
           alt="Partner 1"

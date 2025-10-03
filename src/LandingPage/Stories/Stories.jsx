@@ -6,11 +6,17 @@ const Stories = () => {
     return (
         <div id='stories' className='px-4 sm:px-8 md:px-16 lg:px-[100px] mt-10 md:mt-20 lg:mt-[200px]'>
             <div>
-                <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[64px] text-white font-black uppercase">
+                {/* <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[64px] text-white font-black uppercase">
                     stories
-                </h1>
+                </h1> */}
+                  <div className="w-full max-w-[560px] mb-10 md:mb-[100px] relative">
+          <h1 className="text-white text-4xl sm:text-5xl md:text-[64px] font-black relative z-10 uppercase leading-tight">
+            Stories
+          </h1>
+          <span className="block absolute bottom-1 md:bottom-2 left-0 md:left-[2px] w-[160px] sm:w-[210px] md:w-[280px] h-5 sm:h-[28px] bg-[#061665]"></span>
+        </div>
             </div>
-            <div className='grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 lg:gap-12 xl:gap-[150px] mt-4 md:mt-[43px]'>
+            <div className='grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 lg:gap-12 xl:gap-[150px] mt-4 md:mt-[73px] '>
 <div>
     <img src={stories1} alt="" className="mx-w-[677px] mx-h-[709px]" />
 </div>
@@ -33,7 +39,7 @@ const Stories = () => {
     
 </div>
             </div>
-            <div className='grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 lg:gap-12 xl:gap-[150px] mt-4 md:mt-[43px]'>
+            <div className='grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 lg:gap-12 xl:gap-[150px] mt-4 md:mt-[96px]'>
                 <div>
                     <img src={stories2} alt="" className="mx-w-[677px] mx-h-[709px]" />
                 </div>
