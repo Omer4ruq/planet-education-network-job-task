@@ -1,8 +1,24 @@
-# React + Vite
+# Planet Education React Test
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
+This is a React project built based on the Figma design provided by Planet Education Networks.  
+The application is **responsive**, **mobile-friendly**, and includes a **dynamic navbar** with smooth scrolling to sections. Student testimonials are generated dynamically using the **Faker API**.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
+- **Dynamic Navbar:** Clicking nav items scrolls to the corresponding section.  
+- **Responsive Design:** Works on desktop, tablet, and mobile devices.  
+- **Student Testimonials:** Uses Faker API for dummy student data.  
+- **React + Tailwind CSS:** Clean and maintainable code structure.  
+- **Deployment Ready:** Live demo is hosted online.
+
+---
+
+## Tech Stack
+- **Frontend:** React.js  
+- **Styling:** Tailwind CSS  
+- **Data:** Faker API  
+- **Deployment:** [Vercel / Netlify / GitHub Pages]  
+
+---
